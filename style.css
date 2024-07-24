@@ -1,0 +1,99 @@
+/* General styles for icons */
+.nav-link {
+    color: #ffffff; /* White color for text */
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition effect */
+}
+
+.nav-link i {
+    font-size: 24px; 
+    transition: transform 0.3s; 
+}
+
+.nav-link:hover {
+    color: #f8f9fa; 
+    background-color: #007bff;
+    border-radius: 5px; 
+}
+
+.nav-link:hover i {
+    transform: scale(1.2);
+}
+
+.nav-link.active {
+    color: #007bff; 
+    background-color: #e9ecef;
+    border-radius: 5px; 
+}
+
+.nav-link i {
+    color: #ffffff; /* Default icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover i {
+    color: #f8f9fa; /* Lighter icon color on hover */
+}
+
+/* General Header Styles */
+header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff; /* Default text color */
+    padding: 15px 0;
+}
+
+/* Header Title Styles */
+header .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .d-flex a {
+    text-decoration: none;
+    color: #fff; /* White text for the title */
+}
+
+header .d-flex a i {
+    color: #ffd700; /* Gold color for the icon */
+}
+
+header .d-flex a span {
+    font-weight: bold; /* Bold text for the title */
+    font-size: 2em;
+}
+
+/* Navigation Menu Styles */
+.nav-link {
+    color: #000; /* Black text color for navigation links */
+    font-weight: bold; /* Bold text for navigation links */
+}
+
+.nav-link i {
+    color: #fff; 
+    background-color: #007bff; 
+    border-radius: 50%;
+    padding: 10px; 
+}
+
+
+.nav-link:hover {
+    color: #007bff; 
+}
+
+.nav-link:hover i {
+    background-color: #fff; 
+    color: #007bff; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav {
+        margin-top: 10px;
+    }
+}
